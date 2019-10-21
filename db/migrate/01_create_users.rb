@@ -1,14 +1,9 @@
-class CreateUsers < ActiveRecord::Migration[5.2]
-  def up
-  end
-  def down
-  end
+class CreateUsers < ActiveRecord::Migration
   def change
-    create_table :artists do |t|
+    create_table :users do |t|
       t.string :name
       t.string :email
       t.string :password
-    
     end
   end
 end
